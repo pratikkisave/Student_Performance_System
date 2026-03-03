@@ -234,9 +234,11 @@ st.markdown("""
 # ==================================================
 engine = create_engine("sqlite:///student_data.db")
 
-MODEL_PATH = "student_model.pkl"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "student_model.pkl")
+
 if not os.path.exists(MODEL_PATH):
-    st.error("ML model file not found")
+    st.error(f"ML model file not found at {MODEL_PATH}")
     st.stop()
 
 model = joblib.load(MODEL_PATH)
