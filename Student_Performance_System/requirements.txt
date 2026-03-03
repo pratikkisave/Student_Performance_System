@@ -1,9 +1,9 @@
+streamlit==1.32.0
+altair==4.2.2
 pandas
 numpy
-scikit-learn
 sqlalchemy
-joblib
-streamlit
+scikit-learn
 matplotlib
 seaborn
 xlsxwriter
