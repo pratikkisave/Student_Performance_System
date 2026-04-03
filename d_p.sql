@@ -24,7 +24,7 @@ INSERT INTO student_performance (attendance_rate, study_hours, previous_score, p
 (0.45, 2, 35, 0),
 (0.75, 10, 60, 1);
 
-INSERT INTO users VALUES
-('admin','<HASHED_PASSWORD>','Admin','adminpet'),
-('teacher','<HASHED_PASSWORD>','Teacher','teacherpet'),
-('student','<HASHED_PASSWORD>','Student','studentpet');
+-- INSERT INTO users VALUES
+-- ('admin','<HASHED_PASSWORD>','Admin','adminpet'),
+-- ('teacher','<HASHED_PASSWORD>','Teacher','teacherpet'),
+-- ('student','<HASHED_PASSWORD>','Student','studentpet');

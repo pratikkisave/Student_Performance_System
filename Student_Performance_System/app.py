@@ -189,22 +189,22 @@ else:
 # ==================================================
 # LOGIN
 # ==================================================
-if "login" not in st.session_state:
-    st.session_state.login = False
+# if "login" not in st.session_state:
+#     st.session_state.login = False
 
-if not st.session_state.login:
-    st.markdown("<div class='main-title'>🔐 Admin Login</div>", unsafe_allow_html=True)
-    u = st.text_input("Username")
-    p = st.text_input("Password", type="password")
+# if not st.session_state.login:
+#     st.markdown("<div class='main-title'>🔐 Admin Login</div>", unsafe_allow_html=True)
+#     u = st.text_input("Username")
+#     p = st.text_input("Password", type="password")
 
-    if st.button("Login"):
-        if u == "Pratik" and p == "admin123":
-            st.session_state.login = True
-            st.success("Login Successful")
-            st.rerun()
-        else:
-            st.error("Invalid credentials")
-    st.stop()
+#     if st.button("Login"):
+#         if u == "Pratik" and p == "admin123":
+#             st.session_state.login = True
+#             st.success("Login Successful")
+#             st.rerun()
+#         else:
+#             st.error("Invalid credentials")
+#     st.stop()
 # ===============================
 # THEME TOGGLE (LIGHT / DARK)
 # ===============================

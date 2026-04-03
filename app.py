@@ -774,6 +774,7 @@ col_del1, col_del2 = st.columns([3, 1])
 with col_del2:
     if st.button("🗑️ Delete Student"):
         delete_student(selected_roll)
+        
         st.success("✅ Student deleted successfully")
         st.rerun()
 
